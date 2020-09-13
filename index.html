@@ -462,7 +462,7 @@
 <!-- =========================
     CONTACT SECTION   
 ============================== -->
-<section id="contact" class="parallax-section" method="POST" data-netlify="true">
+<section id="contact" class="parallax-section">
 	<div class="container">
 		<div class="row">
 
@@ -487,10 +487,11 @@
 					<div class="section-title">
 						<h2>Keep in touch</h2>
 					</div>
-					<form action="submit.php" method="post">
+					<form method="POST" data-netlify="true">
 						<input name="name" type="text" class="form-control" id="name" placeholder="Name">
 					  	<input name="email" type="email" class="form-control" id="email" placeholder="Email">
 					  	<textarea name="message" rows="5" class="form-control" id="message" placeholder="Message"></textarea>
+						<input type="file" name="myfile" id="myfile" placeholder="Upload File" rows="7">
 						<div class="col-md-6 col-sm-10">
 							<input name="submit" type="submit" class="form-control" id="submit" value="SEND">
 						</div>
